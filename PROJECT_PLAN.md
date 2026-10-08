@@ -8,7 +8,7 @@
 
 How Much Can a CNN Trust a Waste Image?
 
-Evaluating CNN Reliability Under Real-World Visual Distortions
+Evaluating CNN Reliability on Real-World Waste Images
 
 
 
@@ -16,21 +16,23 @@ Evaluating CNN Reliability Under Real-World Visual Distortions
 
 
 
-This project investigates the reliability of a Convolutional Neural Network (CNN)
+This project investigates the reliability of a Convolutional Neural Network
 
-for household waste image classification. Although a CNN may perform well on
-
-standard test images, images encountered in practical settings can vary in
-
-lighting, orientation, cropping, and visual background.
+(CNN) for classifying real-world waste images.
 
 
 
-The project will examine how these realistic visual changes affect the
+Although a CNN may achieve strong performance on a standard test set, its
 
-classification performance of a CNN and whether data augmentation can improve
+predictions may become less reliable when images contain variations in
 
-its ability to generalize.
+lighting, orientation, composition, or other visual conditions.
+
+
+
+This project will evaluate the classification performance of a CNN and
+
+investigate how data augmentation affects its ability to generalize.
 
 
 
@@ -40,17 +42,35 @@ its ability to generalize.
 
 Automated waste classification can support waste-sorting and recycling
 
-processes. However, a model that performs well only on clean and consistent
-
-images may not be reliable in practical situations.
+processes by helping distinguish between different types of waste materials.
 
 
 
-Understanding how a CNN responds to changes in image conditions is therefore
+However, a model that performs well under limited or controlled image
 
-important when evaluating whether a model can generalize beyond the conditions
+conditions may not remain reliable when applied to real-world waste images.
 
-seen during training.
+
+
+Understanding the conditions under which the model succeeds or fails is
+
+therefore an important part of evaluating a practical deep learning system.
+
+
+
+\## Dataset
+
+
+
+The project will use the RealWaste dataset.
+
+
+
+The dataset details, class distribution, image characteristics, source,
+
+license information, and train/validation/test split will be documented
+
+after the dataset has been downloaded and inspected.
 
 
 
@@ -58,11 +78,9 @@ seen during training.
 
 
 
-How does the reliability of a CNN-based household waste classifier change when
+How does a CNN's classification reliability change when classifying
 
-images are affected by realistic visual conditions such as lighting changes,
-
-rotation, cropping, and background variation?
+real-world waste images, and can data augmentation improve its robustness?
 
 
 
@@ -70,15 +88,15 @@ rotation, cropping, and background variation?
 
 
 
-1\. Build a baseline CNN for household waste classification.
+1\. Build a baseline CNN for waste image classification.
 
 2\. Establish baseline performance on a held-out test set.
 
-3\. Apply data augmentation during training and compare it with the baseline.
+3\. Apply data augmentation and compare its performance with the baseline.
 
-4\. Evaluate model performance under controlled visual distortions.
+4\. Evaluate model performance under controlled visual variations.
 
-5\. Identify which visual conditions cause the greatest performance degradation.
+5\. Identify conditions that cause performance degradation.
 
 6\. Analyze incorrect predictions and identify common failure patterns.
 
@@ -88,23 +106,21 @@ rotation, cropping, and background variation?
 
 
 
-A Convolutional Neural Network (CNN) will be used as the primary deep learning
+A Convolutional Neural Network (CNN) will be used as the primary deep
 
-method because CNNs are appropriate for image classification tasks.
+learning method because CNNs are appropriate for image classification tasks.
 
 
 
 The project will begin with a simple CNN as the baseline model. A second
 
-experiment will use the same CNN architecture with data augmentation during
-
-training.
+experiment will use the same CNN architecture with data augmentation.
 
 
 
-Keeping the architecture consistent between these experiments will allow the
+Keeping the architecture consistent between these experiments will allow
 
-effect of data augmentation to be evaluated as a controlled comparison.
+the effect of data augmentation to be evaluated as a controlled comparison.
 
 
 
@@ -112,9 +128,9 @@ effect of data augmentation to be evaluated as a controlled comparison.
 
 
 
-The baseline will be a simple CNN trained without data augmentation beyond the
+The baseline will be a simple CNN trained using the standard preprocessing
 
-basic preprocessing required for the images.
+pipeline without additional data augmentation.
 
 
 
@@ -138,7 +154,9 @@ The primary controlled comparison will be:
 
 
 
-The goal is to determine whether augmentation improves generalization.
+The purpose of this comparison is to determine whether data augmentation
+
+improves generalization.
 
 
 
@@ -146,13 +164,13 @@ The goal is to determine whether augmentation improves generalization.
 
 
 
-The trained models will also be evaluated using controlled variations of
+The trained model will be evaluated using controlled visual variations of
 
 held-out test images.
 
 
 
-Potential conditions include:
+Potential conditions may include:
 
 
 
@@ -164,15 +182,13 @@ Potential conditions include:
 
 \- Small rotations
 
-\- Cropped images
+\- Cropping
 
-\- Background or visual clutter
+\- Other controlled visual variations supported by the dataset
 
 
 
-The exact transformations will be finalized after examining the selected
-
-dataset and available compute resources.
+The exact transformations will be finalized after examining the dataset.
 
 
 
@@ -180,7 +196,7 @@ dataset and available compute resources.
 
 
 
-Model performance will be evaluated using:
+The models will be evaluated using:
 
 
 
@@ -196,9 +212,9 @@ Model performance will be evaluated using:
 
 
 
-Performance across the different visual conditions will also be compared to
+Performance across different experimental conditions will also be compared
 
-identify changes in model reliability.
+to evaluate changes in model reliability.
 
 
 
@@ -216,11 +232,11 @@ The analysis will investigate questions such as:
 
 \- Which waste categories are most frequently confused?
 
-\- Which visual conditions cause the largest performance drop?
+\- Which visual conditions cause the largest performance decrease?
 
-\- Are visually similar waste categories more difficult to classify?
+\- Are visually similar categories more difficult to classify?
 
-\- What characteristics appear to contribute to incorrect predictions?
+\- What visual characteristics appear to contribute to incorrect predictions?
 
 
 
@@ -230,13 +246,15 @@ The analysis will investigate questions such as:
 
 The project will provide an application-focused evaluation of CNN
 
-classification performance rather than reporting only a single overall accuracy.
+classification performance rather than reporting only a single overall
+
+accuracy.
 
 
 
-The main goal is to understand when the model performs reliably and when its
+The primary goal is to understand when the model performs reliably and when
 
-predictions become less reliable under realistic image variations.
+its predictions become less reliable under different visual conditions.
 
 
 
@@ -249,6 +267,8 @@ The project will document:
 
 
 \- Dataset source
+
+\- Dataset characteristics
 
 \- Data preprocessing
 
@@ -272,5 +292,5 @@ The project will document:
 
 
 
-Day 1: Project setup and research design
+Day 1: Project setup and dataset selection
 
