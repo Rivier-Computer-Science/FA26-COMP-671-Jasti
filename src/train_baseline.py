@@ -9,6 +9,7 @@ from PIL import Image
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 
+
 # Reproducibility
 SEED = 42
 random.seed(SEED)
@@ -23,6 +24,22 @@ EPOCHS = 10
 SPLIT_FILE = Path("data/splits.json")
 MODEL_DIR = Path("results")
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
+
+
+# Training-only augmentation
+train_transform = transforms.Compose([
+    transforms.Resize((IMAGE_SIZE, IMAGE_SIZE)),
+    transforms.RandomHorizontalFlip(p=0.5),
+    transforms.RandomRotation(degrees=10),
+    transforms.ColorJitter(brightness=0.2, contrast=0.2),
+    transforms.ToTensor(),
+])
+
+# Validation images remain unchanged
+eval_transform = transforms.Compose([
+    transforms.Resize((IMAGE_SIZE, IMAGE_SIZE)),
+    transforms.ToTensor(),
+])
 
 
 class WasteDataset(Dataset):
@@ -102,31 +119,38 @@ def main():
     with SPLIT_FILE.open(encoding="utf-8") as file:
         splits = json.load(file)
 
-    classes = sorted({record["label"] for record in splits["train"]})
-    class_to_idx = {name: index for index, name in enumerate(classes)}
-
-    transform = transforms.Compose([
-        transforms.Resize((IMAGE_SIZE, IMAGE_SIZE)),
-        transforms.ToTensor(),
-    ])
+    classes = sorted({
+        record["label"] for record in splits["train"]
+    })
+    class_to_idx = {
+        name: index for index, name in enumerate(classes)
+    }
 
     train_dataset = WasteDataset(
-        splits["train"], class_to_idx, transform
+        splits["train"], class_to_idx, train_transform
     )
     val_dataset = WasteDataset(
-        splits["validation"], class_to_idx, transform
+        splits["validation"], class_to_idx, eval_transform
     )
 
     train_loader = DataLoader(
-        train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=0
+        train_dataset,
+        batch_size=BATCH_SIZE,
+        shuffle=True,
+        num_workers=0,
     )
     val_loader = DataLoader(
-        val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=0
+        val_dataset,
+        batch_size=BATCH_SIZE,
+        shuffle=False,
+        num_workers=0,
     )
 
     model = WasteCNN(len(classes)).to(DEVICE)
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+    optimizer = torch.optim.Adam(
+        model.parameters(), lr=0.001
+    )
 
     best_val_accuracy = 0.0
     history = []
@@ -139,8 +163,8 @@ def main():
     for epoch in range(EPOCHS):
         model.train()
         total_loss = 0.0
-        total = 0
         correct = 0
+        total = 0
 
         for images, labels in train_loader:
             images = images.to(DEVICE)
@@ -158,7 +182,9 @@ def main():
 
         train_loss = total_loss / total
         train_accuracy = correct / total
-        val_loss, val_accuracy = evaluate(model, val_loader, criterion)
+        val_loss, val_accuracy = evaluate(
+            model, val_loader, criterion
+        )
 
         history.append({
             "epoch": epoch + 1,
@@ -183,15 +209,15 @@ def main():
                 "classes": classes,
                 "image_size": IMAGE_SIZE,
                 "seed": SEED,
-            }, MODEL_DIR / "baseline_cnn.pth")
+            }, MODEL_DIR / "augmented_cnn.pth")
 
-    with (MODEL_DIR / "baseline_history.json").open(
+    with (MODEL_DIR / "augmented_history.json").open(
         "w", encoding="utf-8"
     ) as file:
         json.dump(history, file, indent=2)
 
     print("\nBest validation accuracy:", round(best_val_accuracy, 4))
-    print("Saved model: results/baseline_cnn.pth")
+    print("Saved model: results/augmented_cnn.pth")
 
 
 if __name__ == "__main__":
