@@ -1,0 +1,85 @@
+{
+  "model": "Baseline CNN",
+  "test_images": 713,
+  "accuracy": 0.6718092566619915,
+  "classification_report": {
+    "Cardboard": {
+      "precision": 0.7959183673469388,
+      "recall": 0.5652173913043478,
+      "f1-score": 0.6610169491525424,
+      "support": 69.0
+    },
+    "Food Organics": {
+      "precision": 0.8,
+      "recall": 0.7096774193548387,
+      "f1-score": 0.7521367521367521,
+      "support": 62.0
+    },
+    "Glass": {
+      "precision": 0.7777777777777778,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.717948717948718,
+      "support": 63.0
+    },
+    "Metal": {
+      "precision": 0.6942148760330579,
+      "recall": 0.711864406779661,
+      "f1-score": 0.702928870292887,
+      "support": 118.0
+    },
+    "Miscellaneous Trash": {
+      "precision": 0.44680851063829785,
+      "recall": 0.56,
+      "f1-score": 0.4970414201183432,
+      "support": 75.0
+    },
+    "Paper": {
+      "precision": 0.6477272727272727,
+      "recall": 0.76,
+      "f1-score": 0.6993865030674846,
+      "support": 75.0
+    },
+    "Plastic": {
+      "precision": 0.6621621621621622,
+      "recall": 0.7101449275362319,
+      "f1-score": 0.6853146853146853,
+      "support": 138.0
+    },
+    "Textile Trash": {
+      "precision": 0.6818181818181818,
+      "recall": 0.3125,
+      "f1-score": 0.42857142857142855,
+      "support": 48.0
+    },
+    "Vegetation": {
+      "precision": 0.7073170731707317,
+      "recall": 0.8923076923076924,
+      "f1-score": 0.7891156462585034,
+      "support": 65.0
+    },
+    "accuracy": 0.6718092566619915,
+    "macro avg": {
+      "precision": 0.6904160246304912,
+      "recall": 0.6542642782166044,
+      "f1-score": 0.6592734414290382,
+      "support": 713.0
+    },
+    "weighted avg": {
+      "precision": 0.6838810201023928,
+      "recall": 0.6718092566619915,
+      "f1-score": 0.6684270553154683,
+      "support": 713.0
+    }
+  },
+  "classes": [
+    "Cardboard",
+    "Food Organics",
+    "Glass",
+    "Metal",
+    "Miscellaneous Trash",
+    "Paper",
+    "Plastic",
+    "Textile Trash",
+    "Vegetation"
+  ]
+}
