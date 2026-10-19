@@ -119,6 +119,12 @@ These errors suggest that some waste categories may share visual characteristics
 
 The results also show why accuracy alone is not enough to evaluate a classifier. A model may perform reasonably well overall while struggling with particular categories. In a waste-sorting application, these category-specific errors could matter because different materials may need different recycling or disposal methods.
 
+### 4.1 Baseline CNN Errors by Category
+
+The baseline CNN misclassified 234 of the 713 test images. Plastic had the largest number of incorrect predictions, with 40 errors, followed by Metal with 34 errors. Miscellaneous Trash and Textile Trash each had 33 errors, while Cardboard had 30. Vegetation had the fewest errors, with seven misclassified images.
+
+These counts show where the baseline model made the most errors in absolute numbers. However, they do not necessarily identify the categories with the lowest classification accuracy because each category contains a different number of test images. Considering both the number of errors and the number of images in each category provides a more complete picture of model performance.
+
 ## 5. Limitations
 
 This project has several limitations. First, both models were trained for only 10 epochs, so additional training and hyperparameter tuning might change their performance. Second, the experiments used a single train-validation-test split and one random seed. Results may differ with other splits or training runs.
@@ -156,6 +162,30 @@ This figure shows the classification performance of the baseline CNN across the 
 ![Augmented CNN confusion matrix](../figures/augmented_confusion_matrix.png)
 
 This figure shows the classification performance of the augmented CNN. Miscellaneous Trash and Textile Trash were among its most difficult categories.
+
+### Figure 3. Original Test Accuracy Comparison
+
+![Original test accuracy comparison](../figures/model_accuracy_comparison.png)
+
+The baseline CNN achieved 67.18% accuracy on the original test images, compared with 60.17% for the augmented CNN.
+
+### Figure 4. Brightness Robustness Comparison
+
+![Brightness robustness comparison](../figures/brightness_robustness_comparison.png)
+
+The augmented CNN performed better at a brightness factor of 0.7. However, both models experienced a major drop in accuracy at a factor of 0.4.
+
+### Figure 5. Rotation Robustness Comparison
+
+![Rotation robustness comparison](../figures/rotation_robustness_comparison.png)
+
+The augmented CNN maintained higher accuracy as the rotation angle increased. At 45 degrees, it achieved 48.95% accuracy, compared with 27.35% for the baseline CNN.
+
+### Figure 6. Baseline CNN Misclassified Images
+
+![Baseline CNN misclassified examples](../figures/baseline_misclassified_examples.png)
+
+This figure shows examples from the test set that the baseline CNN classified incorrectly. Each image includes its actual category, predicted category, and the model's confidence in its prediction. These examples help illustrate the classification errors that contribute to the model's overall error rate.
 
 ## 9. References
 

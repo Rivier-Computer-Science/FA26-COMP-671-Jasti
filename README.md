@@ -1,102 +1,202 @@
-# FA26-COMP-671-Jasti
+# How Much Can a CNN Trust a Waste Image?
 
-# Household Waste Classification Using CNNs
+## Evaluating CNN Reliability on Real-World Waste Images
 
-## Project Overview
+## 1. Project Overview
 
-This project investigates how reliably a Convolutional Neural Network (CNN) can classify real-world waste images into nine categories. It compares a baseline CNN with a CNN trained using data augmentation to understand whether augmentation improves robustness to changes in brightness and image rotation.
+Waste classification is an important application of computer vision that can support waste sorting and recycling. However, real-world waste images can be challenging because of variations in lighting, orientation, background, and visual similarity between waste categories.
 
-The project uses the RealWaste dataset and evaluates both models on the same test set.
+This project evaluates the reliability of a Convolutional Neural Network (CNN) trained to classify real-world waste images. It compares a baseline CNN with a CNN trained using data augmentation to investigate whether augmentation improves robustness under image transformations.
 
-## Research Question
+**Research Question:** How does a CNN's classification reliability change when classifying real-world waste images, and can data augmentation improve its robustness?
 
-How does a CNN's classification reliability change when classifying real-world waste images, and can data augmentation improve its robustness?
+## 2. Dataset
 
-## Dataset
+This project uses the **RealWaste dataset**, introduced by Single et al. (2023), which contains real-world images of waste materials.
 
-The project uses the RealWaste dataset, which contains 4,752 images across nine categories:
+- **Total images:** 4,752
+- **Number of classes:** 9
+- **Task:** Multiclass image classification
 
-- Cardboard
-- Food Organics
-- Glass
-- Metal
-- Miscellaneous Trash
-- Paper
-- Plastic
-- Textile Trash
-- Vegetation
+### Waste Categories
 
-Dataset source: [UCI Machine Learning Repository — RealWaste](https://doi.org/10.24432/C5SS4G)
+1. Cardboard
+2. Food Organics
+3. Glass
+4. Metal
+5. Miscellaneous Trash
+6. Paper
+7. Plastic
+8. Textile Trash
+9. Vegetation
 
-## Models
+The dataset presents a realistic classification challenge because some waste categories share similar visual characteristics.
 
-### 1. Baseline CNN
+**Dataset reference:** Single, S., Iranmanesh, S., & Raad, R. (2023). *RealWaste: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning*. Information, 14(12), Article 633. https://doi.org/10.3390/info14120633
 
-The baseline model uses three convolutional layers with 16, 32, and 64 filters, followed by a fully connected layer and a final classification layer.
+## 3. Methodology
 
-### 2. CNN with Data Augmentation
+### 3.1 Data Preparation
 
-The second model uses the same CNN architecture but applies random horizontal flips, rotations, and brightness and contrast adjustments to training images.
+The dataset was divided into training, validation, and test sets using a fixed random seed of 42.
 
-## Dataset Split
-
-| Dataset | Images |
-|---|---:|
-| Training | 3,326 |
-| Validation | 713 |
-| Testing | 713 |
-| **Total** | **4,752** |
-
-The split uses random seed 42.
-
-## Experimental Results
-
-### Test Set Performance
-
-| Model | Test Accuracy |
-|---|---:|
-| Baseline CNN | 67.18% |
-| Augmented CNN | 60.17% |
-
-The baseline CNN performed better on the original test images.
-
-### Brightness Robustness
-
-| Brightness Factor | Baseline CNN | Augmented CNN |
+| Dataset split | Number of images | Percentage |
 |---|---:|---:|
-| 1.0 | 67.18% | 60.17% |
-| 0.7 | 30.72% | 41.94% |
-| 0.4 | 8.13% | 8.42% |
+| Training | 3,326 | 70% |
+| Validation | 713 | 15% |
+| Testing | 713 | 15% |
+| **Total** | **4,752** | **100%** |
 
-The augmented model performed better under moderate brightness reduction.
+The same data split was used to compare both models. The test set was used for final evaluation and robustness experiments.
 
-### Rotation Robustness
+### 3.2 Baseline CNN
 
-| Rotation | Baseline CNN | Augmented CNN |
+The baseline CNN was trained using the original training images with the preprocessing defined in the training pipeline. Its performance provides a reference point for evaluating the effect of data augmentation.
+
+### 3.3 CNN with Data Augmentation
+
+A second CNN was trained using data augmentation to expose the model to variations in training images. The purpose was to investigate whether augmentation could improve generalization and robustness to changes in image appearance and orientation.
+
+### 3.4 Robustness Evaluation
+
+Both models were evaluated on the same test images under the following conditions:
+
+- **Original images:** Standard test-set evaluation.
+- **Brightness changes:** Brightness factors of 1.0, 0.7, and 0.4.
+- **Rotation changes:** Rotations of 0°, 15°, 30°, and 45°.
+
+Accuracy was used to compare model performance under each condition.
+
+## 4. Experimental Results
+
+### 4.1 Original Test-Set Performance
+
+| Metric | Baseline CNN | Augmented CNN |
+|---|---:|---:|
+| Test accuracy | 67.18% | 60.17% |
+| Macro precision | 0.69 | 0.62 |
+| Macro recall | 0.65 | 0.58 |
+| Macro F1-score | 0.66 | 0.58 |
+| Weighted F1-score | 0.67 | 0.59 |
+
+The baseline CNN achieved higher accuracy on the original test set. Therefore, data augmentation did not improve performance on unmodified images in this experiment.
+
+![Original test accuracy comparison](figures/model_accuracy_comparison.png)
+
+**Figure 1. Original Test Accuracy Comparison.** The baseline CNN achieved 67.18% accuracy, compared with 60.17% for the augmented CNN.
+
+### 4.2 Brightness Robustness
+
+| Brightness factor | Baseline CNN | Augmented CNN |
+|---|---:|---:|
+| 1.0 (original brightness) | 67.18% | 60.17% |
+| 0.7 (reduced brightness) | 30.72% | 41.94% |
+| 0.4 (strongly reduced brightness) | 8.13% | 8.42% |
+
+The augmented CNN performed better at a brightness factor of 0.7, achieving an improvement of approximately 11.22 percentage points over the baseline CNN.
+
+At a brightness factor of 0.4, both models performed poorly. This suggests that severe brightness reduction remains a significant challenge for both models.
+
+![Brightness robustness comparison](figures/brightness_robustness_comparison.png)
+
+**Figure 2. Brightness Robustness Comparison.** The graph compares both models across three brightness conditions.
+
+### 4.3 Rotation Robustness
+
+| Rotation angle | Baseline CNN | Augmented CNN |
 |---|---:|---:|
 | 0° | 67.18% | 60.17% |
 | 15° | 34.64% | 58.63% |
 | 30° | 32.54% | 53.30% |
 | 45° | 27.35% | 48.95% |
 
-The augmented model maintained higher accuracy at all tested nonzero rotation angles.
+The augmented CNN performed substantially better under all tested nonzero rotation conditions. At 45°, it achieved 48.95% accuracy, compared with 27.35% for the baseline CNN—a difference of 21.60 percentage points.
 
-## Main Findings
+These results suggest that the augmentation strategy improved robustness to image rotation, even though the augmented model had lower accuracy on the original test set.
 
-- The baseline CNN achieved higher accuracy on the original test set.
-- Data augmentation improved robustness to moderate brightness changes and image rotations.
-- Both models struggled with very dark images.
-- Miscellaneous Trash and Textile Trash were challenging categories for the augmented model.
+![Rotation robustness comparison](figures/rotation_robustness_comparison.png)
 
-These results show that higher accuracy on original images does not necessarily mean better robustness under changed image conditions.
+**Figure 3. Rotation Robustness Comparison.** The augmented CNN retained higher accuracy as the rotation angle increased.
 
-## Project Structure
+## 5. Failure Analysis
+
+The baseline CNN correctly classified 479 of the 713 test images and misclassified 234 images.
+
+### 5.1 Misclassified Examples
+
+Examining incorrect predictions helps identify cases where the model struggles to distinguish between visually similar waste categories.
+
+![Baseline CNN misclassified examples](figures/baseline_misclassified_examples.png)
+
+**Figure 4. Baseline CNN Misclassified Examples.** Examples of test images for which the baseline CNN predicted the wrong category.
+
+### 5.2 Errors by Category
+
+The number of baseline CNN errors varied across the nine waste categories.
+
+| Actual category | Number of misclassified images |
+|---|---:|
+| Plastic | 40 |
+| Metal | 34 |
+| Miscellaneous Trash | 33 |
+| Textile Trash | 33 |
+| Cardboard | 30 |
+| Glass | 21 |
+| Food Organics | 18 |
+| Paper | 18 |
+| Vegetation | 7 |
+
+Plastic had the largest number of errors in absolute terms, followed by Metal. Vegetation had the fewest errors. However, the categories contain different numbers of test images, so error counts alone do not indicate which category had the lowest classification accuracy.
+
+![Baseline CNN errors by category](figures/baseline_errors_by_category.png)
+
+**Figure 5. Baseline CNN Errors by Actual Category.** The graph compares the number of incorrect predictions across the nine waste categories.
+
+## 6. Discussion
+
+The experiments demonstrate that classification accuracy on original images does not necessarily reflect robustness under changed image conditions.
+
+The baseline CNN achieved better accuracy on the original test set, but its accuracy decreased substantially when brightness or rotation transformations were applied.
+
+The augmented CNN showed better performance under moderate brightness reduction and all tested nonzero rotation angles. However, both models struggled with strong brightness reduction.
+
+These findings suggest that data augmentation can improve robustness to certain image transformations, but its effectiveness depends on the transformation and the training configuration. A model that performs better on standard test images is not necessarily the most robust model under real-world variations.
+
+## 7. Limitations
+
+This project has several limitations:
+
+- The evaluation uses one dataset and one fixed train-validation-test split.
+- The experiments focus on classification accuracy rather than a broader range of robustness metrics.
+- Only selected brightness factors and rotation angles were tested.
+- Severe brightness reduction caused poor performance in both models.
+- The results do not establish robustness to every real-world condition, such as blur, occlusion, camera differences, or complex backgrounds.
+- The observed differences apply to the models and experimental settings used in this project; additional runs would be needed to assess variability across random seeds.
+
+## 8. Conclusion
+
+This project evaluated a baseline CNN and an augmented CNN on the RealWaste dataset.
+
+The baseline CNN achieved **67.18% test accuracy**, while the augmented CNN achieved **60.17%** on the original test images. Despite its lower original accuracy, the augmented CNN performed better under moderate brightness reduction and image rotation.
+
+The largest observed rotation-robustness difference occurred at 45°, where the augmented CNN achieved 48.95% accuracy compared with 27.35% for the baseline CNN.
+
+Overall, the results indicate that data augmentation can improve robustness to specific image transformations, but it does not guarantee better performance across every evaluation condition.
+
+## 9. Project Structure
 
 ```text
 household-waste-cnn/
+├── data/
+│   └── splits.json
 ├── figures/
 │   ├── baseline_confusion_matrix.png
-│   └── augmented_confusion_matrix.png
+│   ├── augmented_confusion_matrix.png
+│   ├── model_accuracy_comparison.png
+│   ├── brightness_robustness_comparison.png
+│   ├── rotation_robustness_comparison.png
+│   ├── baseline_misclassified_examples.png
+│   └── baseline_errors_by_category.png
 ├── report/
 │   └── final_report.md
 ├── results/
@@ -114,88 +214,56 @@ household-waste-cnn/
 │   ├── train_augmented.py
 │   ├── evaluate_augmented.py
 │   ├── evaluate_robustness.py
-│   └── evaluate_rotation.py
-├── README.md
-└── PROJECT_PLAN.md
+│   ├── evaluate_rotation.py
+│   ├── plot_robustness_results.py
+│   ├── analyze_misclassified.py
+│   └── analyze_class_errors.py
+├── .gitignore
+└── README.md
 ```
 
-The project also uses a local dataset split file and locally saved model checkpoints. These files may be excluded from version control.
+The dataset, local split configuration, and model checkpoint files should remain local when excluded by `.gitignore`, unless there is a specific reason to share them.
 
-## Requirements
+## 10. How to Run
 
-- Python 3.13 or a compatible Python version
+### Requirements
+
+- Python 3
 - PyTorch
-- Torchvision
+- torchvision
 - Matplotlib
-- Scikit-learn
+- scikit-learn
 - Pillow
 
-## Setup
+Install the required packages in your Python environment:
 
-Create and activate a virtual environment from the project directory.
-
-On Windows:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-Install the required packages:
-
-```powershell
+```bash
 pip install torch torchvision matplotlib scikit-learn pillow
 ```
 
-## Running the Project
+### Run the experiments
 
-Run scripts from the project root directory.
+Run the following commands from the project root, after configuring the dataset path in the scripts if necessary.
 
-Inspect the dataset:
-
-```powershell
+```bash
 python src/inspect_dataset.py
-```
-
-Prepare the dataset splits:
-
-```powershell
 python src/prepare_dataset.py
-```
-
-Train and evaluate the baseline model:
-
-```powershell
 python src/train_baseline.py
 python src/evaluate_baseline.py
-```
-
-Train and evaluate the augmented model:
-
-```powershell
 python src/train_augmented.py
 python src/evaluate_augmented.py
-```
-
-Run the robustness experiments:
-
-```powershell
 python src/evaluate_robustness.py
 python src/evaluate_rotation.py
+python src/plot_robustness_results.py
+python src/analyze_misclassified.py
+python src/analyze_class_errors.py
 ```
 
-**Note:** The dataset must be available at the location expected by the scripts. Check the configuration and file paths before running them. Training scripts may take time to finish, especially on a CPU.
+Training scripts create model checkpoints and training-history files. Evaluation and analysis scripts generate metrics, robustness results, and figures.
 
-## Results and Figures
+**Note:** The exact dataset path and training settings must match those configured in the source scripts.
 
-The `results/` directory stores experiment metrics and training history. The `figures/` directory contains the confusion matrices generated during evaluation.
+## 11. References
 
-The full project discussion, methodology, results, limitations, and references are available in [`report/final_report.md`](report/final_report.md).
-
-## Limitations
-
-The experiments use one train-validation-test split and a limited training period. The robustness evaluation covers only selected brightness factors and rotation angles. The results do not establish how the models will perform on every real-world waste image.
-
-## Reference
-
-Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning. *Information, 14*(12), Article 633. https://doi.org/10.3390/info14120633
+1. Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning. *Information, 14*(12), Article 633. https://doi.org/10.3390/info14120633
+2. Single, S., Iranmanesh, S., & Raad, R. (2023). *RealWaste* [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5SS4G

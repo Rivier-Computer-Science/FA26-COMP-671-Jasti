@@ -1,0 +1,1406 @@
+[
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_157.jpg",
+    "true": "Food Organics",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.3370194137096405
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_350.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.34407559037208557
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_205.jpg",
+    "true": "Paper",
+    "predicted": "Cardboard",
+    "confidence": 0.6253888010978699
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_476.jpg",
+    "true": "Metal",
+    "predicted": "Textile Trash",
+    "confidence": 0.5110515356063843
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_160.jpg",
+    "true": "Metal",
+    "predicted": "Glass",
+    "confidence": 0.44171538949012756
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_771.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.5327064990997314
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_327.jpg",
+    "true": "Paper",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5434238910675049
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_226.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.5944837927818298
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_30.jpg",
+    "true": "Paper",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.6405358910560608
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_93.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Plastic",
+    "confidence": 0.6263779997825623
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_195.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Plastic",
+    "confidence": 0.5231441855430603
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_279.jpg",
+    "true": "Textile Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.7009426355361938
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_208.jpg",
+    "true": "Paper",
+    "predicted": "Metal",
+    "confidence": 0.4685021638870239
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_307.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.2761874496936798
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_108.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Paper",
+    "confidence": 0.37566959857940674
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_197.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.27785998582839966
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_244.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.42433640360832214
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_225.jpg",
+    "true": "Metal",
+    "predicted": "Cardboard",
+    "confidence": 0.4744349718093872
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_845.jpg",
+    "true": "Plastic",
+    "predicted": "Cardboard",
+    "confidence": 0.6907138228416443
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_570.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.4367111921310425
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_48.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.518293559551239
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_101.jpg",
+    "true": "Textile Trash",
+    "predicted": "Metal",
+    "confidence": 0.5260797739028931
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_344.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.6309393048286438
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_653.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.4521114230155945
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_62.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.2532447278499603
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_303.jpg",
+    "true": "Textile Trash",
+    "predicted": "Paper",
+    "confidence": 0.6081110239028931
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_29.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.6486783027648926
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_43.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.7204512357711792
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_424.jpg",
+    "true": "Cardboard",
+    "predicted": "Paper",
+    "confidence": 0.9583781361579895
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_140.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.8144512176513672
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_300.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.5473427176475525
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_495.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.5009037256240845
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_349.jpg",
+    "true": "Paper",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.32559213042259216
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_426.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Glass",
+    "confidence": 0.3666316866874695
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_355.jpg",
+    "true": "Food Organics",
+    "predicted": "Vegetation",
+    "confidence": 0.8049686551094055
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_143.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.4504125714302063
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_237.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.5589472055435181
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_784.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5479761958122253
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_1.jpg",
+    "true": "Plastic",
+    "predicted": "Paper",
+    "confidence": 0.6293870806694031
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_297.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Plastic",
+    "confidence": 0.7775394320487976
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_345.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.512535572052002
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_407.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Textile Trash",
+    "confidence": 0.6776322722434998
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_121.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.49264347553253174
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_434.jpg",
+    "true": "Cardboard",
+    "predicted": "Vegetation",
+    "confidence": 0.9999996423721313
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_422.jpg",
+    "true": "Cardboard",
+    "predicted": "Metal",
+    "confidence": 0.7952391505241394
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_66.jpg",
+    "true": "Cardboard",
+    "predicted": "Textile Trash",
+    "confidence": 0.5186850428581238
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_223.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.35530221462249756
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_401.jpg",
+    "true": "Food Organics",
+    "predicted": "Vegetation",
+    "confidence": 0.9427039623260498
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_16.jpg",
+    "true": "Glass",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.4651375114917755
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_127.jpg",
+    "true": "Textile Trash",
+    "predicted": "Metal",
+    "confidence": 0.3708241879940033
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_47.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.4745977222919464
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_93.jpg",
+    "true": "Food Organics",
+    "predicted": "Plastic",
+    "confidence": 0.5141562223434448
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_291.jpg",
+    "true": "Textile Trash",
+    "predicted": "Paper",
+    "confidence": 0.9073371887207031
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_791.jpg",
+    "true": "Plastic",
+    "predicted": "Glass",
+    "confidence": 0.46461617946624756
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_45.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.45216983556747437
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_268.jpg",
+    "true": "Cardboard",
+    "predicted": "Paper",
+    "confidence": 0.6111946105957031
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_235.jpg",
+    "true": "Glass",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.33865612745285034
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_414.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Plastic",
+    "confidence": 0.5290055274963379
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Vegetation\\Vegetation_209.jpg",
+    "true": "Vegetation",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.41002872586250305
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_464.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.6011967658996582
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_54.jpg",
+    "true": "Metal",
+    "predicted": "Glass",
+    "confidence": 0.2996809780597687
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_224.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.49775150418281555
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_279.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.8751114010810852
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_436.jpg",
+    "true": "Cardboard",
+    "predicted": "Vegetation",
+    "confidence": 0.9813451766967773
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_362.jpg",
+    "true": "Glass",
+    "predicted": "Cardboard",
+    "confidence": 0.6101815104484558
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_120.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.3628537356853485
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_297.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.4444192945957184
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_167.jpg",
+    "true": "Textile Trash",
+    "predicted": "Plastic",
+    "confidence": 0.6945831179618835
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_115.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.42701685428619385
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_10.jpg",
+    "true": "Cardboard",
+    "predicted": "Metal",
+    "confidence": 0.5572746992111206
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_25.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.6118628978729248
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_101.jpg",
+    "true": "Glass",
+    "predicted": "Vegetation",
+    "confidence": 0.7751258015632629
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_83.jpg",
+    "true": "Cardboard",
+    "predicted": "Plastic",
+    "confidence": 0.34033358097076416
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_396.jpg",
+    "true": "Metal",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.6464560627937317
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_197.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.7803778648376465
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_290.jpg",
+    "true": "Textile Trash",
+    "predicted": "Paper",
+    "confidence": 0.9723270535469055
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_179.jpg",
+    "true": "Cardboard",
+    "predicted": "Paper",
+    "confidence": 0.5314919352531433
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_133.jpg",
+    "true": "Paper",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.22127112746238708
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_236.jpg",
+    "true": "Metal",
+    "predicted": "Food Organics",
+    "confidence": 0.34653180837631226
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_140.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.5042828917503357
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_502.jpg",
+    "true": "Plastic",
+    "predicted": "Vegetation",
+    "confidence": 0.36719802021980286
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_242.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.7444224953651428
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_312.jpg",
+    "true": "Food Organics",
+    "predicted": "Vegetation",
+    "confidence": 0.5893503427505493
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_195.jpg",
+    "true": "Plastic",
+    "predicted": "Textile Trash",
+    "confidence": 0.4268912672996521
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_194.jpg",
+    "true": "Cardboard",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.8643757104873657
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_409.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Paper",
+    "confidence": 0.8302651643753052
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_95.jpg",
+    "true": "Glass",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.2914736270904541
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_370.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Plastic",
+    "confidence": 0.5405194163322449
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_436.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Plastic",
+    "confidence": 0.3775072395801544
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_171.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.781914234161377
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_315.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Paper",
+    "confidence": 0.7982797622680664
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_287.jpg",
+    "true": "Textile Trash",
+    "predicted": "Plastic",
+    "confidence": 0.47842416167259216
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_411.jpg",
+    "true": "Food Organics",
+    "predicted": "Vegetation",
+    "confidence": 0.8095837235450745
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_148.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.3317682445049286
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Vegetation\\Vegetation_182.jpg",
+    "true": "Vegetation",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.43856045603752136
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_148.jpg",
+    "true": "Cardboard",
+    "predicted": "Food Organics",
+    "confidence": 0.7197620868682861
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_293.jpg",
+    "true": "Metal",
+    "predicted": "Food Organics",
+    "confidence": 0.4678073525428772
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_197.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.9664698839187622
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Vegetation\\Vegetation_40.jpg",
+    "true": "Vegetation",
+    "predicted": "Plastic",
+    "confidence": 0.6783945560455322
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_451.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.5603357553482056
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_27.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5350126028060913
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_301.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Textile Trash",
+    "confidence": 0.35686635971069336
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_195.jpg",
+    "true": "Cardboard",
+    "predicted": "Food Organics",
+    "confidence": 0.5933703780174255
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_96.jpg",
+    "true": "Cardboard",
+    "predicted": "Food Organics",
+    "confidence": 0.847464919090271
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_393.jpg",
+    "true": "Plastic",
+    "predicted": "Paper",
+    "confidence": 0.6767765879631042
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_99.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.7701511383056641
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_708.jpg",
+    "true": "Metal",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.3602611720561981
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_779.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.539167582988739
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_446.jpg",
+    "true": "Cardboard",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.3382161259651184
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_414.jpg",
+    "true": "Cardboard",
+    "predicted": "Metal",
+    "confidence": 0.84538733959198
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_25.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.36263972520828247
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_8.jpg",
+    "true": "Cardboard",
+    "predicted": "Plastic",
+    "confidence": 0.231659397482872
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_166.jpg",
+    "true": "Metal",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.47864726185798645
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_282.jpg",
+    "true": "Food Organics",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5347631573677063
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_56.jpg",
+    "true": "Cardboard",
+    "predicted": "Paper",
+    "confidence": 0.754981517791748
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_171.jpg",
+    "true": "Metal",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.8531213998794556
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_429.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.8533651828765869
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_419.jpg",
+    "true": "Glass",
+    "predicted": "Metal",
+    "confidence": 0.34676238894462585
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_100.jpg",
+    "true": "Textile Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.37100088596343994
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_318.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.8461830019950867
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_389.jpg",
+    "true": "Glass",
+    "predicted": "Cardboard",
+    "confidence": 0.24757124483585358
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_328.jpg",
+    "true": "Plastic",
+    "predicted": "Glass",
+    "confidence": 0.43464574217796326
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_405.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.4789576530456543
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_143.jpg",
+    "true": "Cardboard",
+    "predicted": "Paper",
+    "confidence": 0.500582754611969
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Vegetation\\Vegetation_217.jpg",
+    "true": "Vegetation",
+    "predicted": "Food Organics",
+    "confidence": 0.3109099864959717
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_244.jpg",
+    "true": "Cardboard",
+    "predicted": "Glass",
+    "confidence": 0.45779839158058167
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_269.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.5702980160713196
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_146.jpg",
+    "true": "Food Organics",
+    "predicted": "Plastic",
+    "confidence": 0.6242707967758179
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_100.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.64568692445755
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_323.jpg",
+    "true": "Food Organics",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5949361324310303
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_204.jpg",
+    "true": "Textile Trash",
+    "predicted": "Metal",
+    "confidence": 0.8693022727966309
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_29.jpg",
+    "true": "Glass",
+    "predicted": "Cardboard",
+    "confidence": 0.6051723957061768
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_52.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.3866410255432129
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_34.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.6847524642944336
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_286.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.40699201822280884
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_312.jpg",
+    "true": "Glass",
+    "predicted": "Metal",
+    "confidence": 0.35360288619995117
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_31.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.4179372489452362
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_12.jpg",
+    "true": "Textile Trash",
+    "predicted": "Paper",
+    "confidence": 0.32701578736305237
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_361.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.7396790385246277
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_387.jpg",
+    "true": "Plastic",
+    "predicted": "Food Organics",
+    "confidence": 0.44611868262290955
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_85.jpg",
+    "true": "Textile Trash",
+    "predicted": "Paper",
+    "confidence": 0.922950029373169
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_290.jpg",
+    "true": "Cardboard",
+    "predicted": "Plastic",
+    "confidence": 0.3274132013320923
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_394.jpg",
+    "true": "Cardboard",
+    "predicted": "Paper",
+    "confidence": 0.5995919704437256
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_130.jpg",
+    "true": "Food Organics",
+    "predicted": "Plastic",
+    "confidence": 0.8282736539840698
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_35.jpg",
+    "true": "Food Organics",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.6514526605606079
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_330.jpg",
+    "true": "Food Organics",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.6364200115203857
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_89.jpg",
+    "true": "Textile Trash",
+    "predicted": "Plastic",
+    "confidence": 0.3752712607383728
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_400.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.5485385656356812
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_413.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.5077780485153198
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_147.jpg",
+    "true": "Textile Trash",
+    "predicted": "Metal",
+    "confidence": 0.41285958886146545
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_410.jpg",
+    "true": "Plastic",
+    "predicted": "Paper",
+    "confidence": 0.6372467875480652
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_492.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.382905513048172
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_496.jpg",
+    "true": "Plastic",
+    "predicted": "Glass",
+    "confidence": 0.5346967577934265
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_19.jpg",
+    "true": "Food Organics",
+    "predicted": "Metal",
+    "confidence": 0.36576756834983826
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_320.jpg",
+    "true": "Food Organics",
+    "predicted": "Vegetation",
+    "confidence": 0.9365795850753784
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_213.jpg",
+    "true": "Metal",
+    "predicted": "Food Organics",
+    "confidence": 0.3973551392555237
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_99.jpg",
+    "true": "Cardboard",
+    "predicted": "Plastic",
+    "confidence": 0.8737630248069763
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_385.jpg",
+    "true": "Plastic",
+    "predicted": "Vegetation",
+    "confidence": 0.6408902406692505
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_519.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.256181925535202
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_138.jpg",
+    "true": "Cardboard",
+    "predicted": "Plastic",
+    "confidence": 0.42113780975341797
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Vegetation\\Vegetation_281.jpg",
+    "true": "Vegetation",
+    "predicted": "Food Organics",
+    "confidence": 0.37135711312294006
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_158.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.3561329245567322
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_337.jpg",
+    "true": "Cardboard",
+    "predicted": "Textile Trash",
+    "confidence": 0.2693002223968506
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_115.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.945814311504364
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_105.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.3575263023376465
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_438.jpg",
+    "true": "Metal",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.44646012783050537
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_8.jpg",
+    "true": "Glass",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5325623750686646
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_429.jpg",
+    "true": "Cardboard",
+    "predicted": "Paper",
+    "confidence": 0.664875864982605
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_211.jpg",
+    "true": "Textile Trash",
+    "predicted": "Plastic",
+    "confidence": 0.4273388981819153
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_834.jpg",
+    "true": "Plastic",
+    "predicted": "Glass",
+    "confidence": 0.36379432678222656
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_75.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.4033292233943939
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_92.jpg",
+    "true": "Metal",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5645423531532288
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_371.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.6934590935707092
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_217.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5540675520896912
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_281.jpg",
+    "true": "Plastic",
+    "predicted": "Vegetation",
+    "confidence": 0.576653242111206
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_52.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.38774779438972473
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_178.jpg",
+    "true": "Paper",
+    "predicted": "Glass",
+    "confidence": 0.6983728408813477
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_295.jpg",
+    "true": "Food Organics",
+    "predicted": "Plastic",
+    "confidence": 0.48670002818107605
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_338.jpg",
+    "true": "Plastic",
+    "predicted": "Cardboard",
+    "confidence": 0.4293217957019806
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_74.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.3195893168449402
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_31.jpg",
+    "true": "Paper",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5410218238830566
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_229.jpg",
+    "true": "Metal",
+    "predicted": "Cardboard",
+    "confidence": 0.3870100975036621
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_113.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.980948805809021
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_26.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.4252588748931885
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_405.jpg",
+    "true": "Food Organics",
+    "predicted": "Vegetation",
+    "confidence": 0.37121549248695374
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_542.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.5589959621429443
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_19.jpg",
+    "true": "Cardboard",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.358132004737854
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_491.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Paper",
+    "confidence": 0.4785451889038086
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_64.jpg",
+    "true": "Cardboard",
+    "predicted": "Paper",
+    "confidence": 0.7139389514923096
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_46.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.5572471022605896
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_316.jpg",
+    "true": "Textile Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.5807144641876221
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_206.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.4146815836429596
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_311.jpg",
+    "true": "Textile Trash",
+    "predicted": "Metal",
+    "confidence": 0.6597201228141785
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_302.jpg",
+    "true": "Metal",
+    "predicted": "Plastic",
+    "confidence": 0.7811670899391174
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_92.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.4954336881637573
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_387.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.8517506718635559
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_766.jpg",
+    "true": "Plastic",
+    "predicted": "Metal",
+    "confidence": 0.47724512219429016
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_443.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.7555060982704163
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_291.jpg",
+    "true": "Plastic",
+    "predicted": "Glass",
+    "confidence": 0.5777009129524231
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_34.jpg",
+    "true": "Cardboard",
+    "predicted": "Metal",
+    "confidence": 0.6080731153488159
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_246.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.3721023201942444
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_178.jpg",
+    "true": "Cardboard",
+    "predicted": "Plastic",
+    "confidence": 0.514663577079773
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_412.jpg",
+    "true": "Cardboard",
+    "predicted": "Vegetation",
+    "confidence": 0.4431319236755371
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_224.jpg",
+    "true": "Glass",
+    "predicted": "Vegetation",
+    "confidence": 0.4679240882396698
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_87.jpg",
+    "true": "Plastic",
+    "predicted": "Paper",
+    "confidence": 0.6202069520950317
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_317.jpg",
+    "true": "Metal",
+    "predicted": "Food Organics",
+    "confidence": 0.44959861040115356
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Vegetation\\Vegetation_300.jpg",
+    "true": "Vegetation",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.4072278141975403
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_39.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.6565790176391602
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_440.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Food Organics",
+    "confidence": 0.5859909653663635
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_452.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Glass",
+    "confidence": 0.5027909874916077
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_136.jpg",
+    "true": "Food Organics",
+    "predicted": "Plastic",
+    "confidence": 0.4153704047203064
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_100.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.7407065629959106
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Metal\\Metal_787.jpg",
+    "true": "Metal",
+    "predicted": "Paper",
+    "confidence": 0.9990332126617432
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_829.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5614477396011353
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_23.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.7788988351821899
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_555.jpg",
+    "true": "Plastic",
+    "predicted": "Glass",
+    "confidence": 0.5764557123184204
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_488.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.3141094446182251
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_49.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Cardboard",
+    "confidence": 0.891051173210144
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Food Organics\\Food Organics_101.jpg",
+    "true": "Food Organics",
+    "predicted": "Vegetation",
+    "confidence": 0.9403578639030457
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_250.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5393244624137878
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Vegetation\\Vegetation_265.jpg",
+    "true": "Vegetation",
+    "predicted": "Metal",
+    "confidence": 0.2910239100456238
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_127.jpg",
+    "true": "Paper",
+    "predicted": "Cardboard",
+    "confidence": 0.6738589406013489
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_36.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.366407185792923
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_168.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.6083912253379822
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_7.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Textile Trash",
+    "confidence": 0.3860336244106293
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_24.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.7998061180114746
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_65.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.4341854453086853
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_45.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Vegetation",
+    "confidence": 0.8577830791473389
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Plastic\\Plastic_73.jpg",
+    "true": "Plastic",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5561933517456055
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_106.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.4641297161579132
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Glass\\Glass_407.jpg",
+    "true": "Glass",
+    "predicted": "Plastic",
+    "confidence": 0.4331633150577545
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Textile Trash\\Textile Trash_66.jpg",
+    "true": "Textile Trash",
+    "predicted": "Miscellaneous Trash",
+    "confidence": 0.5101770162582397
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Paper\\Paper_487.jpg",
+    "true": "Paper",
+    "predicted": "Plastic",
+    "confidence": 0.7951764464378357
+  },
+  {
+    "path": "S:\\AI Document\\deep learning\\project\\realwaste\\realwaste-main\\RealWaste\\Miscellaneous Trash\\Miscellaneous Trash_235.jpg",
+    "true": "Miscellaneous Trash",
+    "predicted": "Metal",
+    "confidence": 0.3812522292137146
+  }
+]
