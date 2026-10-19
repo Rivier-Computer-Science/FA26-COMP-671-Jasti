@@ -187,6 +187,13 @@ The augmented CNN maintained higher accuracy as the rotation angle increased. At
 
 This figure shows examples from the test set that the baseline CNN classified incorrectly. Each image includes its actual category, predicted category, and the model's confidence in its prediction. These examples help illustrate the classification errors that contribute to the model's overall error rate.
 
+### Figure 7. Baseline CNN Misclassified Images by Actual Category
+
+![Baseline CNN errors by category](../figures/baseline_errors_by_category.png)
+
+The graph compares the number of incorrect predictions across the nine waste categories.
+
+
 ## 9. References
 
 Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning. Information, 14(12), Article 633. https://doi.org/10.3390/info14120633
