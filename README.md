@@ -185,8 +185,7 @@ Overall, the results indicate that data augmentation can improve robustness to s
 
 ## 9. Project Structure
 
-```text
-household-waste-cnn/
+`household-waste-cnn/
 ├── data/
 │   └── splits.json
 ├── figures/
@@ -198,14 +197,16 @@ household-waste-cnn/
 │   ├── baseline_misclassified_examples.png
 │   └── baseline_errors_by_category.png
 ├── report/
-│   └── final_report.md
+│   ├── final_report.md
+│   └── final_report.pdf
 ├── results/
 │   ├── baseline_history.json
 │   ├── baseline_test_results.json
 │   ├── augmented_history.json
 │   ├── augmented_test_results.json
 │   ├── brightness_robustness.json
-│   └── rotation_robustness.json
+│   ├── rotation_robustness.json
+│   └── augmented_cnn.pth
 ├── src/
 │   ├── inspect_dataset.py
 │   ├── prepare_dataset.py
@@ -219,8 +220,10 @@ household-waste-cnn/
 │   ├── analyze_misclassified.py
 │   └── analyze_class_errors.py
 ├── .gitignore
-└── README.md
-```
+├── LICENSE
+├── PROJECT_PLAN.md
+├── README.md
+└── requirements.txt
 
 The dataset, local split configuration, and model checkpoint files should remain local when excluded by `.gitignore`, unless there is a specific reason to share them.
 
