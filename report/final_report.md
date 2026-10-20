@@ -1,5 +1,9 @@
 # How Much Can a CNN Trust a Waste Image? Evaluating CNN Reliability on Real-World Waste Images
 
+## Abstract
+
+This project investigates the reliability of convolutional neural networks (CNNs) for classifying waste images into nine categories using the RealWaste dataset. A baseline CNN trained on original images was compared with a CNN trained using data augmentation. Both models were evaluated on the same held-out test set and tested under changes in image brightness and rotation. The baseline model achieved 67.18% accuracy on the original test images, while the augmented model achieved 60.17%. However, the augmented model performed better under moderate brightness reduction and image rotation. At 45 degrees of rotation, it achieved 48.95% accuracy, compared with 27.35% for the baseline. Both models performed poorly on very dark images and struggled with certain waste categories. These findings show that overall accuracy alone does not fully measure model reliability and that robustness testing and failure analysis are important for understanding CNN behavior.
+
 ## 1. Introduction
 
 Waste sorting is an important part of recycling, but identifying different types of waste from images is not always easy. Some materials look similar, and image conditions such as lighting and object orientation can make classification more difficult.
@@ -133,7 +137,17 @@ The robustness experiments tested only selected brightness factors and rotation 
 
 Finally, the models were evaluated on one dataset, so their performance on images collected from other sources remains unknown. The results should therefore be interpreted as findings from these experiments rather than proof that either model will perform equally well in every real-world waste-sorting environment.
 
-## 6. Conclusion
+## 6. Ethics, Limitations, and Responsible Use
+
+Automated waste classification could help support recycling workflows, but incorrect predictions may cause recyclable materials to be sorted incorrectly. The models developed in this project should therefore be treated as experimental tools rather than replacements for human judgment or established waste-handling procedures.
+
+The RealWaste dataset may not represent every waste-management facility, geographic region, lighting condition, or type of waste. Performance may vary when images differ from those used during training and evaluation. The experiments showed substantial accuracy reductions under very low brightness, demonstrating that predictions can become unreliable under challenging conditions.
+
+Responsible deployment would require testing on representative images from the intended environment, monitoring category-specific errors, and providing a fallback for uncertain predictions. Human review should remain available for ambiguous cases. Data collection should also respect applicable privacy requirements, especially if images capture people or identifying information. Finally, the environmental benefits of automated sorting should be considered alongside the computational resources required to train and operate the models.
+
+These considerations limit the conclusions that can be drawn from the current experiments. Further validation on diverse waste images and real-world sorting conditions would be necessary before using the models in operational settings.
+
+## 7. Conclusion
 
 In this project, I compared a baseline CNN with a CNN trained using data augmentation for classifying waste images into nine categories. The baseline model achieved 67.18% test accuracy, while the augmented model achieved 60.17%.
 
@@ -143,13 +157,13 @@ The results suggest that data augmentation can improve robustness to certain ima
 
 Overall, this project showed me that evaluating a CNN requires more than measuring accuracy on original images. Testing changed image conditions and examining classification errors provides a better understanding of the model's strengths and limitations.
 
-## 7. Future Work
+## 8. Future Work
 
 Future work could include training for more epochs, tuning the learning rate and augmentation settings, and inspecting misclassified images in greater detail. Testing additional image transformations and evaluating the models on a separate dataset could also help determine how well the results generalize to real-world waste images.
 
 Another useful improvement would be to compare the custom CNN with a pretrained model using transfer learning. This could help determine whether a model that starts with features learned from a larger image dataset performs better on waste classification. Repeating the experiments with multiple random seeds would also provide a clearer picture of how consistent the results are.
 
-## 8. Figures
+## 9. Figures
 
 ### Figure 1. Baseline CNN Confusion Matrix
 
@@ -194,7 +208,7 @@ This figure shows examples from the test set that the baseline CNN classified in
 The graph compares the number of incorrect predictions across the nine waste categories.
 
 
-## 9. References
+## 10. References
 
 Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning. Information, 14(12), Article 633. https://doi.org/10.3390/info14120633
 
