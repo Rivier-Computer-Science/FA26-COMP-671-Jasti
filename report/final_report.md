@@ -68,9 +68,9 @@ To test robustness, I evaluated the models using darker images and rotated image
 
 ### 3.1 Baseline and Augmented Model Comparison
 
-The baseline CNN achieved a test accuracy of 67.18%, while the augmented CNN achieved 60.17%. In this experiment, the baseline model performed better on the original test images.
+The baseline CNN achieved a test accuracy of 67.18%, while the augmented CNN achieved 60.17%, indicating that the baseline model performed better on the original test images. Figure 3 illustrates this difference in performance.
 
-The augmented model did not improve the overall test accuracy. However, accuracy alone does not show how well a model handles changes in image conditions. For this reason, I also tested both models using different brightness levels and image rotations.
+However, the augmented model's lower accuracy on the original test set does not fully describe its reliability under different image conditions. Therefore, both models were also evaluated using different brightness levels and image rotations to investigate whether data augmentation improved robustness.
 
 ### 3.2 Brightness Robustness
 
@@ -82,9 +82,9 @@ I tested both models using the original test images and two darker versions, wit
 | 0.7 | 30.72% | 41.94% |
 | 0.4 | 8.13% | 8.42% |
 
-The baseline model performed better on the original images, but its accuracy dropped sharply when the images became darker. At a brightness factor of 0.7, the augmented model performed better by 11.22 percentage points. At 0.4 brightness, both models performed very poorly.
+The baseline model performed better on the original images, but its accuracy dropped sharply as brightness decreased. At a brightness factor of 0.7, the augmented model outperformed the baseline by 11.22 percentage points. However, at a brightness factor of 0.4, both models achieved very low accuracy (8.13% and 8.42%, respectively).
 
-These results suggest that augmentation helped the model handle moderate brightness changes, but it did not provide enough protection against very dark images.
+As shown in Figure 4, data augmentation improved robustness to moderate brightness reduction but provided little benefit under severe darkening. These findings suggest that augmentation can improve performance under specific image conditions without guaranteeing reliable predictions in all conditions.
 
 ### 3.3 Rotation Robustness
 
@@ -97,31 +97,29 @@ I also tested the models using image rotations of 0, 15, 30, and 45 degrees.
 | 30° | 32.54% | 53.30% |
 | 45° | 27.35% | 48.95% |
 
-The baseline model's accuracy decreased considerably as the rotation angle increased. The augmented model maintained higher accuracy at all three nonzero rotation angles.
+The baseline model's accuracy decreased considerably as the rotation angle increased. In contrast, the augmented model maintained higher accuracy at all three nonzero rotation angles. At 45°, the augmented model achieved 48.95% accuracy, compared with 27.35% for the baseline, a difference of 21.60 percentage points.
 
-At 45 degrees, the augmented model achieved 48.95% accuracy, compared with 27.35% for the baseline. This is a difference of 21.60 percentage points.
-
-This result suggests that training with random rotations helped the augmented model become more robust to rotated images, even though its accuracy on the original test set was lower.
+As shown in Figure 5, training with random rotations improved the augmented model's robustness to the rotated images evaluated in this experiment, despite its lower accuracy on the original test set. These results suggest that rotation augmentation can improve performance under rotational changes, although it does not necessarily improve accuracy on unmodified images.
 
 ### 3.4 Overall Findings
 
-The experiments showed a trade-off between performance on original images and robustness to image transformations. The baseline model performed better on the original test set, while the augmented model handled moderate brightness changes and rotations more successfully.
+The experiments revealed a trade-off between performance on original images and robustness to image transformations. The baseline model achieved higher accuracy on the original test set, while the augmented model performed better under moderate brightness reduction and image rotations.
 
-However, both models struggled with very dark images. The results also varied across waste categories, so the overall accuracy does not fully describe their reliability. The next section examines the classification errors in more detail.
+However, both models struggled with severely darkened images. Classification performance also varied across waste categories, indicating that overall accuracy alone does not fully capture model reliability. The following section examines the classification errors in more detail.
 
 ## 4. Failure Analysis
 
-The confusion matrix helped me understand which waste categories were difficult for the augmented CNN to classify correctly.
+The confusion matrix helped identify which waste categories were difficult for the augmented CNN to classify correctly.
 
-Miscellaneous Trash was the weakest category, with an F1-score of 0.18. Out of 75 test images in this category, only 10 were classified correctly. The model predicted 33 of these images as Plastic.
+Miscellaneous Trash was the weakest category, with an F1-score of 0.18. Of the 75 test images in this category, only 10 were classified correctly, while 33 were incorrectly predicted as Plastic.
 
-Textile Trash was also difficult to classify: only 13 out of 48 images were correctly identified. Ten Textile Trash images were predicted as Metal, and nine were predicted as Miscellaneous Trash.
+Textile Trash was also difficult to classify. Only 13 of its 48 test images were correctly identified. Of the remaining images, 10 were predicted as Metal and nine as Miscellaneous Trash.
 
-The model also confused Metal with Plastic, predicting 23 Metal images as Plastic. Similarly, 13 Vegetation images were classified as Food Organics.
+The model also confused Metal with Plastic, incorrectly predicting 23 Metal images as Plastic. Similarly, 13 Vegetation images were classified as Food Organics.
 
-These errors suggest that some waste categories may share visual characteristics that make them difficult to distinguish. However, inspecting the misclassified images would be necessary to understand the exact reasons for these errors.
+These errors suggest that some waste categories may share visual characteristics that make them difficult to distinguish. However, further inspection of the misclassified images would be needed to determine the specific reasons for these errors.
 
-The results also show why accuracy alone is not enough to evaluate a classifier. A model may perform reasonably well overall while struggling with particular categories. In a waste-sorting application, these category-specific errors could matter because different materials may need different recycling or disposal methods.
+These findings demonstrate why accuracy alone is insufficient for evaluating a classifier. A model may achieve reasonable overall accuracy while performing poorly on particular categories. In a waste-sorting application, such category-specific errors could be important because different materials may require different recycling or disposal methods.
 
 ### 4.1 Baseline CNN Errors by Category
 
@@ -137,7 +135,7 @@ The robustness experiments tested only selected brightness factors and rotation 
 
 Finally, the models were evaluated on one dataset, so their performance on images collected from other sources remains unknown. The results should therefore be interpreted as findings from these experiments rather than proof that either model will perform equally well in every real-world waste-sorting environment.
 
-## 6. Ethics, Limitations, and Responsible Use
+## 6. Ethics and Responsible Use
 
 Automated waste classification could help support recycling workflows, but incorrect predictions may cause recyclable materials to be sorted incorrectly. The models developed in this project should therefore be treated as experimental tools rather than replacements for human judgment or established waste-handling procedures.
 
@@ -169,44 +167,42 @@ Another useful improvement would be to compare the custom CNN with a pretrained 
 
 ![Baseline CNN confusion matrix](../figures/baseline_confusion_matrix.png)
 
-This figure shows the classification performance of the baseline CNN across the nine waste categories. The confusion matrix helps identify which categories were correctly classified and which were confused with other categories.
+The confusion matrix shows correct predictions and misclassifications across the nine waste categories.
 
 ### Figure 2. Augmented CNN Confusion Matrix
 
 ![Augmented CNN confusion matrix](../figures/augmented_confusion_matrix.png)
 
-This figure shows the classification performance of the augmented CNN. Miscellaneous Trash and Textile Trash were among its most difficult categories.
+The confusion matrix shows the augmented CNN's classification performance across the nine waste categories, including categories that were frequently confused.
 
 ### Figure 3. Original Test Accuracy Comparison
 
 ![Original test accuracy comparison](../figures/model_accuracy_comparison.png)
-
-The baseline CNN achieved 67.18% accuracy on the original test images, compared with 60.17% for the augmented CNN.
+The baseline CNN achieved 67.18% accuracy, compared with 60.17% for the augmented CNN on the original test images.
 
 ### Figure 4. Brightness Robustness Comparison
 
 ![Brightness robustness comparison](../figures/brightness_robustness_comparison.png)
 
-The augmented CNN performed better at a brightness factor of 0.7. However, both models experienced a major drop in accuracy at a factor of 0.4.
+The augmented CNN performed better at a brightness factor of 0.7, but both models experienced a substantial accuracy drop at 0.4.
 
 ### Figure 5. Rotation Robustness Comparison
 
 ![Rotation robustness comparison](../figures/rotation_robustness_comparison.png)
 
-The augmented CNN maintained higher accuracy as the rotation angle increased. At 45 degrees, it achieved 48.95% accuracy, compared with 27.35% for the baseline CNN.
+The augmented CNN maintained higher accuracy as rotation increased, achieving 48.95% at 45°, compared with 27.35% for the baseline CNN.
 
 ### Figure 6. Baseline CNN Misclassified Images
 
 ![Baseline CNN misclassified examples](../figures/baseline_misclassified_examples.png)
 
-This figure shows examples from the test set that the baseline CNN classified incorrectly. Each image includes its actual category, predicted category, and the model's confidence in its prediction. These examples help illustrate the classification errors that contribute to the model's overall error rate.
+Examples of test images incorrectly classified by the baseline CNN, showing the actual category, predicted category, and model confidence.
 
 ### Figure 7. Baseline CNN Misclassified Images by Actual Category
 
 ![Baseline CNN errors by category](../figures/baseline_errors_by_category.png)
 
-The graph compares the number of incorrect predictions across the nine waste categories.
-
+The chart compares the number of incorrect predictions made by the baseline CNN across the nine actual waste categories.
 
 ## 10. References
 
