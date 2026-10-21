@@ -109,7 +109,7 @@ However, both models struggled with severely darkened images. Classification per
 
 ## 4. Failure Analysis
 
-The confusion matrix helped identify which waste categories were difficult for the augmented CNN to classify correctly.
+The confusion matrices in Figures 1 and 2 show which waste categories were correctly classified and which were frequently confused. The misclassified examples in Figure 6 provide visual examples of prediction errors, while Figure 7 compares the number of baseline errors across the nine actual waste categories.
 
 Miscellaneous Trash was the weakest category, with an F1-score of 0.18. Of the 75 test images in this category, only 10 were classified correctly, while 33 were incorrectly predicted as Plastic.
 
@@ -204,8 +204,8 @@ Examples of test images incorrectly classified by the baseline CNN, showing the 
 
 The chart compares the number of incorrect predictions made by the baseline CNN across the nine actual waste categories.
 
-## 10. References
+### 10. References
 
-Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning. Information, 14(12), Article 633. https://doi.org/10.3390/info14120633
+Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning. *Information, 14*(12), Article 633. [https://doi.org/10.3390/info14120633](https://doi.org/10.3390/info14120633)
 
-Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5SS4G
+Single, S., Iranmanesh, S., & Raad, R. (2023). RealWaste [Dataset]. UCI Machine Learning Repository. [https://doi.org/10.24432/C5SS4G](https://doi.org/10.24432/C5SS4G)
