@@ -98,4 +98,5 @@ The experiments used one dataset split, one random seed, and a limited number of
 
 ## Report
 
-The final written report is available in the `report/` directory.
+- [Final report (PDF)](report/final_report.pdf)
+- [Editable report (Markdown)](report/final_report.md)
