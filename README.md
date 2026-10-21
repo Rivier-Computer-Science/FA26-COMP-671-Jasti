@@ -75,7 +75,22 @@ The baseline achieved higher accuracy on the original test images. The augmented
 4. Download the RealWaste dataset from the source linked above.
 5. Follow the dataset preparation and training instructions in the project scripts.
 
-Run scripts from the project root. Check each script's arguments and dataset-path settings before running it; exact commands may depend on your local dataset location.
+## Running the Experiments
+
+Run commands from the project root after installing dependencies and preparing the dataset.
+
+```bash
+python src/prepare_dataset.py
+python src/train_baseline.py
+python src/train_augmented.py
+python src/evaluate_baseline.py
+python src/evaluate_augmented.py
+python src/evaluate_robustness.py
+python src/evaluate_rotation.py
+```
+Additional scripts are available for dataset inspection, class-error analysis, and plotting robustness results.
+
+**Note:** Check each script's expected arguments and dataset paths before running these commands. Some scripts may require additional configuration.
 
 ## Limitations
 
